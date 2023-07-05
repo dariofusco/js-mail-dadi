@@ -9,16 +9,16 @@ searchButton.addEventListener("click", function () {
     for (let i = 0; i < listMail.length; i++) {
         const allMail = listMail[i];
         console.log(allMail);
-        
+
         if (allMail === mailToSearch) {
             console.log("trovata");
             accessAllowed = true;
         }
-        if (accessAllowed = true) {
-            document.getElementById("access").innerHTML = "Accesso consentito";
-        } else {
-            document.getElementById("access").innerHTML = "Accesso non consentito";
-        }
+    }
+    if (accessAllowed === true) {
+        document.getElementById("access").innerHTML = "Accesso consentito";
+    } else {
+        document.getElementById("access").innerHTML = "Accesso non consentito";
     }
 });
 
