@@ -3,16 +3,18 @@ let accessAllowed = false;
 
 const searchButton = document.getElementById("button")
 searchButton.addEventListener("click", function () {
-    mailToSearch = document.getElementById("mail").value
+    
+    const mailToSearch = document.getElementById("mail").value
     console.log(mailToSearch)
 
     for (let i = 0; i < listMail.length; i++) {
-        const allMail = listMail[i];
-        console.log(allMail);
+        const currentMail = listMail[i];
+        console.log(currentMail);
 
-        if (allMail === mailToSearch) {
+        if (currentMail === mailToSearch) {
             console.log("trovata");
             accessAllowed = true;
+            break;
         }
     }
     if (accessAllowed === true) {
